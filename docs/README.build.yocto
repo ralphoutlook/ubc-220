@@ -1,0 +1,49 @@
+Introducing BSP
+-------------------------------------------------------------------------------------------
+    The BSP is based on Yocto Project with Freescale enhanced features for i.MX6, plus specific target board features from Advantech Inc..
+    The Advantech Yocto Project BSP Release directory contains a "sources" directory, which contains the recipes used to build,
+
+one or more build directories, and a set of scripts used to set up the environment.
+
+    The recipes used to build the project come from both the community and Advantech. The Yocto Project layers are downloaded
+
+to the sources directory. This sets up the recipes that are used to build the project.
+Naming Rule
+
+    The tarball/prebuilt image name is consist of the model name followed by "LB" or "LI" plus version number and released date.
+
+    For example, BSP file name: imx6LBV8040_2017-01-16.tgz
+    which , "LB" is acronym of Linux BSP,
+               "V8040" stands for Version 8.040.
+
+
+
+
+    For example, Yocto image name: 7421A1LIV8040_DualPlus_2017-01-16.img.gz
+    which "7421A1" stands for ROM-7421 A1
+              "LI" is acronym for prebuilt Linux Image,
+              "DualPlus" means this image is fit for Dual Plus Core/Quad Plus Core.
+
+    For example, Yocto image name: 3420A1LIV8050_DualQuad_2017-01-17.img.gz
+    which "3420A1" stands for ROM-3420 A1
+              "LI" is acronym for prebuilt Linux Image,
+              "DualQuad" means this image is fit for Dual Core/Quad Core.
+
+    For example, Yocto image name: U220A1LIV8080_DualLiteSolo_2017-02-08.img.gz
+    which "U220A1" stands for UBC-220 A1
+              "LI" is acronym for prebuilt Linux Image,
+              "DualLiteSolo" means this image is fit for Dual Lite Core/Solo Core.
+
+BSP Content
+The description of some important folders list below:
+sources/
+meta-advantech/ : meta layer by Advantech
+meta-fsl-*/ : meta layer by Freescale
+fsl-setup-release.sh : to create one new build environment
+setup-environment : to continue an exist build environment
+
+
+
+
+
+
