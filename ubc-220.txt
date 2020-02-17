@@ -1,4 +1,6 @@
-
+1. fetch_repo.sh 
+2. repo_ubc-220.sh
+3. source_fsl-env.sh
 
 
 

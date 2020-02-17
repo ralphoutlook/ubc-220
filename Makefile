@@ -28,7 +28,7 @@ $(builddir)/.repo:
 
 $(builddir)/.setenv:
 #	@cd $(yoctodir) && MACHINE=$(yoctomachine) EULA=1 source fsl-setup-release.sh -b $(yoctobuilddir) -e $(yoctodistro)
-	@cd $(yoctodir) && DISTRO= $(yoctodistro) \
+	@cd $(yoctodir) && DISTRO=$(yoctodistro) \
 		MACHINE=$(yoctomachine) EULA=1 source fsl-setup-release.sh -b $(yoctobuilddir)
 	@touch $(yoctodir)/$(yoctobuilddir)/conf/sanity.conf
 	@touch $@
